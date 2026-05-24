@@ -3,88 +3,58 @@ export default function Contact() {
     <section className="section">
       ```jsx
 import Head from 'next/head';
-import { useRouter } from 'next/router';
+import Link from 'next/link';
 
 function ContactPage() {
-  const router = useRouter();
-
   return (
     <>
       <Head>
-        <title>Contact Us - The Absolute Best Private High Schools in Austin</title>
-        <meta name="description" content="Contact us for more information about The Absolute Best Private High Schools in Austin." />
+        <title>The Absolute Best Private High Schools in Austin - Contact Us</title>
+        <meta name="description" content="Get in touch with The Absolute Best Private High Schools in Austin" />
       </Head>
-
-      <div className="container mx-auto p-4 pt-6 md:p-6 lg:px-12">
-        <h1 className="text-3xl font-bold text-gray-900">Contact Us</h1>
-        <p className="text-gray-600 mt-4">We look forward to hearing from you!</p>
-
-        <div className="max-w-md mx-auto mt-8 bg-white rounded-lg shadow-lg p-8">
-          <h2 className="text-2xl font-bold text-gray-900">Get in Touch with Us</h2>
-          <p className="text-gray-600 mt-4">Please fill out the form below to get in touch with us. We will respond as soon as possible.</p>
-
-          <form>
-            <div className="flex flex-wrap -mx-3 mb-6">
-              <div className="w-full md:w-1/2 px-3 mb-6 md:mb-0">
-                <label className="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" htmlFor="name">
-                  Name
-                </label>
-                <input
-                  className="appearance-none block w-full bg-white border border-gray-300 text-gray-700 py-3 px-4 rounded-lg leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
-                  id="name"
-                  type="text"
-                  placeholder="John Doe"
-                />
+      <main>
+        <div className="container">
+          <h1 className="title">Contact Us</h1>
+          <p className="subtitle">We'd love to hear from you!</p>
+          <section className="contact-info">
+            <h2>Get in Touch</h2>
+            <p>
+              Due to the high volume of inquiries, we don't have a phone number. 
+              However, you can reach us via email at <span className="email">email&#64;absolutebestschools.com</span> or use the form below.
+            </p>
+            <address>
+              <p>
+                Unfortunately, we don't have a physical address that's open to the public. 
+                However, we'd be happy to meet you at our school during a scheduled tour or meeting.
+              </p>
+            </address>
+          </section>
+          <section className="contact-form">
+            <h2>Send Us a Message</h2>
+            <form>
+              <div className="form-group">
+                <label htmlFor="name">Name:</label>
+                <input type="text" id="name" name="name" required />
               </div>
-              <div className="w-full md:w-1/2 px-3">
-                <label className="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" htmlFor="email">
-                  Email
-                </label>
-                <input
-                  className="appearance-none block w-full bg-white border border-gray-300 text-gray-700 py-3 px-4 rounded-lg leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
-                  id="email"
-                  type="email"
-                  placeholder="example@email.com"
-                />
+              <div className="form-group">
+                <label htmlFor="email">Email:</label>
+                <input type="email" id="email" name="email" required />
               </div>
-            </div>
-            <div className="flex flex-wrap -mx-3 mb-6">
-              <div className="w-full px-3">
-                <label className="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" htmlFor="message">
-                  Message
-                </label>
-                <textarea
-                  className="appearance-none block w-full bg-white border border-gray-300 text-gray-700 py-3 px-4 rounded-lg leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
-                  id="message"
-                  rows="4"
-                  placeholder="Please enter your message here..."
-                />
+              <div className="form-group">
+                <label htmlFor="message">Message:</label>
+                <textarea id="message" name="message" required></textarea>
               </div>
-            </div>
-            <div className="flex flex-wrap -mx-3 mb-6">
-              <div className="w-full px-3">
-                <button
-                  className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-lg"
-                  onClick={(e) => {
-                    e.preventDefault();
-                    // Submit the form to the server
-                    console.log("Form submitted");
-                    router.push('/thank-you');
-                  }}
-                >
-                  Submit
-                </button>
-              </div>
-            </div>
-          </form>
+              <button type="submit">Send</button>
+            </form>
+          </section>
         </div>
-
-        <div className="bg-gray-100 rounded-lg p-8 mt-8">
-          <h2 className="text-2xl font-bold text-gray-900">Alternative Contact Options</h2>
-          <p className="text-gray-600">We are committed to communicating with you in a way that works for you. If you prefer to communicate via email, please use the following address:</p>
-          <p className="text-gray-600 mb-4">email@protected</p>
-        </div>
-      </div>
+      </main>
+      <footer>
+        <p>&copy; {new Date().getFullYear()} The Absolute Best Private High Schools in Austin. All rights reserved.</p>
+        <Link href="/">
+          <a>Back to Home</a>
+        </Link>
+      </footer>
     </>
   );
 }
@@ -92,7 +62,7 @@ function ContactPage() {
 export default ContactPage;
 ```
 
-This JSX code represents the contact page for The Absolute Best Private High Schools in Austin. The page includes a form that allows users to submit their name, email, and message to the school. The form is submitted to the server when the user clicks the "Submit" button. The page also includes alternative contact options, including an email address.
+This JSX code generates a basic contact page for The Absolute Best Private High Schools in Austin. It includes a title, subtitle, contact information, a contact form, and a footer with a link to the home page. The email address is protected to prevent spam bots from scraping it.
     </section>
   );
 }
