@@ -9,8 +9,8 @@ function ProgramsPage() {
   return (
     <>
       <Head>
-        <title>The Absolute Best Private High Schools in Austin | Programs</title>
-        <meta name="description" content="Explore the best private high school programs in Austin, TX." />
+        <title>The Absolute Best Private High Schools in Austin - Programs</title>
+        <meta name="description" content="Explore the best private high schools in Austin, TX" />
       </Head>
 
       <header>
@@ -19,11 +19,6 @@ function ProgramsPage() {
             <li>
               <Link href="/">
                 <a>Home</a>
-              </Link>
-            </li>
-            <li>
-              <Link href="/about">
-                <a>About Us</a>
               </Link>
             </li>
             <li>
@@ -36,51 +31,49 @@ function ProgramsPage() {
                 <a>Admissions</a>
               </Link>
             </li>
+            <li>
+              <Link href="/about">
+                <a>About</a>
+              </Link>
+            </li>
           </ul>
         </nav>
       </header>
 
       <main>
-        <section className="programs-hero">
-          <h1>Private High School Programs in Austin</h1>
-          <p>Discover the best private high school programs in Austin, TX, tailored to help your child thrive academically, personally, and socially.</p>
-          <Link href="/contact">
-            <a className="btn">Get in Touch</a>
-          </Link>
+        <section className="hero">
+          <h1>Discover the Best Private High School Programs in Austin</h1>
+          <p>At The Absolute Best Private High Schools in Austin, we offer a range of programs to help our students succeed.</p>
         </section>
 
-        <section className="programs-grid">
-          <h2>Our Programs</h2>
+        <section className="programs">
+          <h2>Academic Programs</h2>
           <ul>
             <li>
-              <h3>Academic Programs</h3>
-              <p>Our rigorous academic programs are designed to challenge and engage students, with a focus on critical thinking, creativity, and problem-solving.</p>
+              <h3>Advanced Placement (AP) Courses</h3>
+              <p>Our AP courses are designed to challenge our students and prepare them for college-level coursework.</p>
             </li>
             <li>
-              <h3>Arts and Music Programs</h3>
-              <p>Our arts and music programs offer students the opportunity to explore their creativity and express themselves through various mediums.</p>
+              <h3>Dual Enrollment Programs</h3>
+              <p>Our dual enrollment programs allow students to earn college credit while still in high school.</p>
             </li>
             <li>
-              <h3>Athletic Programs</h3>
-              <p>Our athletic programs foster teamwork, discipline, and sportsmanship, with a focus on developing well-rounded student-athletes.</p>
-            </li>
-            <li>
-              <h3>Counseling and Support Programs</h3>
-              <p>Our counseling and support programs provide students with a safe and supportive environment to address academic, emotional, and social challenges.</p>
+              <h3>Special Education Programs</h3>
+              <p>Our special education programs are designed to meet the unique needs of our students with special needs.</p>
             </li>
           </ul>
         </section>
 
-        <section className="testimonials">
-          <h2>What Our Parents Say</h2>
+        <section className="extracurriculars">
+          <h2>Extracurricular Programs</h2>
           <ul>
             <li>
-              <p>"The Absolute Best Private High Schools in Austin has provided my child with an exceptional education and a supportive community."</p>
-              <p>- Parent, Class of 2025</p>
+              <h3>Sports Teams</h3>
+              <p>Our sports teams compete at the state and national levels, and our students develop important skills like teamwork and discipline.</p>
             </li>
             <li>
-              <p>"The school's commitment to academic excellence, character development, and community service has made a significant impact on my child's life."</p>
-              <p>- Parent, Class of 2024</p>
+              <h3>Clubs and Organizations</h3>
+              <p>Our clubs and organizations offer students the opportunity to explore their interests and develop new skills.</p>
             </li>
           </ul>
         </section>
@@ -88,7 +81,7 @@ function ProgramsPage() {
 
       <footer>
         <p>&copy; 2026 The Absolute Best Private High Schools in Austin. All rights reserved.</p>
-        <p>Email: <a href="mailto:email protected">email protected</a></p>
+        <p>Email: <a href="mailto:email@protected">email@protected</a></p>
       </footer>
     </>
   );
@@ -97,7 +90,11 @@ function ProgramsPage() {
 export default ProgramsPage;
 ```
 
-This JSX code represents a Next.js page component for the Programs page of The Absolute Best Private High Schools in Austin. It includes a navigation menu, a hero section, a grid section showcasing the school's programs, a testimonials section, and a footer with contact information.
+This JSX code represents the programs page for The Absolute Best Private High Schools in Austin. It includes a navigation menu, a hero section, sections for academic and extracurricular programs, and a footer with contact information. 
+
+This code uses Next.js components, such as `Head` for setting the page title and meta tags, `Link` for client-side routing, and `main` for structuring the page content. The CSS classes used in the code are for styling purposes and can be customized as needed. 
+
+This code assumes that the Next.js project is set up with a proper `pages` directory structure and that the necessary dependencies are installed.
     </section>
   );
 }
