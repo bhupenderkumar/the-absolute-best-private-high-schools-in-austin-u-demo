@@ -3,64 +3,41 @@ export default function About() {
     <section className="section">
       ```jsx
 import Head from 'next/head';
-import Link from 'next/link';
 
-function AboutPage() {
+const About = () => {
   return (
     <>
       <Head>
-        <title>About - The Absolute Best Private High Schools in Austin</title>
+        <title>About Us - The Absolute Best Private High Schools in Austin</title>
+        <meta name="description" content="Learn more about our private high schools in Austin, TX." />
       </Head>
 
-      <header className="bg-gray-800 text-white p-4">
-        <h1 className="text-3xl font-bold">About Us</h1>
-      </header>
-
-      <main className="max-w-3xl mx-auto p-4">
-        <section className="bg-white p-4 rounded-lg shadow-md">
-          <h2 className="text-2xl font-bold mb-2">Our Mission</h2>
-          <p>
-            At The Absolute Best Private High Schools in Austin, we are committed to providing a world-class education that prepares our students for success in college, careers, and beyond. Our experienced and dedicated faculty are passionate about teaching and mentoring, and our rigorous academic programs are designed to challenge and inspire our students to reach their full potential.
-          </p>
-        </section>
-
-        <section className="bg-white p-4 rounded-lg shadow-md mt-4">
-          <h2 className="text-2xl font-bold mb-2">Our Values</h2>
-          <ul>
-            <li className="mb-2">
-              <span className="font-bold">Excellence:</span> We strive for excellence in all that we do, from the classroom to the extracurricular activities.
-            </li>
-            <li className="mb-2">
-              <span className="font-bold">Respect:</span> We treat each other with kindness, respect, and empathy.
-            </li>
-            <li className="mb-2">
-              <span className="font-bold">Innovation:</span> We encourage creativity, critical thinking, and problem-solving in all areas of school life.
-            </li>
-          </ul>
-        </section>
-
-        <section className="bg-white p-4 rounded-lg shadow-md mt-4">
-          <h2 className="text-2xl font-bold mb-2">Get in Touch</h2>
-          <p>
-            If you have any questions or would like to learn more about our school, please don't hesitate to contact us.
-          </p>
-          <p className="mb-2">
-            Email: <Link href="mailto:email protected" className="text-blue-600 hover:text-blue-800">email protected</Link>
-          </p>
-        </section>
+      <main className="max-w-7xl mx-auto px-4 py-8">
+        <h1 className="text-3xl font-bold mb-4">About Us</h1>
+        <p>
+          At The Absolute Best Private High Schools in Austin, we are dedicated to providing a world-class education that fosters academic excellence, creativity, and character development.
+        </p>
+        <p>
+          Our mission is to empower students to become confident, compassionate, and critically thinking individuals who are prepared to make a positive impact in their communities and beyond.
+        </p>
+        <p>
+          With a focus on personalized learning, small class sizes, and a supportive community, we offer a unique and inclusive environment that allows students to thrive and reach their full potential.
+        </p>
+        <p>
+          We are proud to be a part of the Austin community and look forward to sharing our story with you.
+        </p>
+        <p>
+          If you have any questions or would like to learn more about our schools, please don't hesitate to contact us at <a href="mailto:email protected">email protected</a>.
+        </p>
       </main>
-
-      <footer className="bg-gray-800 text-white p-4">
-        <p>&copy; {new Date().getFullYear()} The Absolute Best Private High Schools in Austin. All rights reserved.</p>
-      </footer>
     </>
   );
-}
+};
 
-export default AboutPage;
+export default About;
 ```
 
-This JSX code creates an about page for The Absolute Best Private High Schools in Austin, including a header, main content area, and footer. The page features sections on the school's mission, values, and contact information. The code uses Next.js components and features a clean and modern design.
+This code generates a basic about page for The Absolute Best Private High Schools in Austin, with a title, meta description, and main content. The main content includes a brief introduction, the school's mission, and a call-to-action to contact the school for more information.
     </section>
   );
 }
